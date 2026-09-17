@@ -1,0 +1,9 @@
+node_modules
+dist
+.DS_Store
+*.log
+.env
+.env.local
+
+# lowdb runtime data — seed template is committed separately
+apps/server/data/db.json

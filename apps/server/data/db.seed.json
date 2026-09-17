@@ -1,0 +1,139 @@
+{
+    "board": {
+        "id": "board-1",
+        "name": "Product Roadmap",
+        "columns": [
+            {
+                "id": "col-todo",
+                "name": "Backlog",
+                "order": 0
+            },
+            {
+                "id": "col-doing",
+                "name": "In Progress",
+                "order": 1,
+                "wipLimit": 3
+            },
+            {
+                "id": "col-review",
+                "name": "Review",
+                "order": 2,
+                "wipLimit": 2
+            },
+            {
+                "id": "col-done",
+                "name": "Done",
+                "order": 3
+            }
+        ],
+        "labels": [
+            {
+                "id": "lbl-bug",
+                "name": "Bug",
+                "color": "#FF5A6E"
+            },
+            {
+                "id": "lbl-feat",
+                "name": "Feature",
+                "color": "#E6398A"
+            },
+            {
+                "id": "lbl-chore",
+                "name": "Chore",
+                "color": "#A4ABC9"
+            },
+            {
+                "id": "lbl-research",
+                "name": "Research",
+                "color": "#3DDC97"
+            }
+        ],
+        "members": [
+            {
+                "id": "user-aria",
+                "name": "Aria Chen",
+                "initials": "AC",
+                "color": "#E6398A"
+            },
+            {
+                "id": "user-juno",
+                "name": "Juno Park",
+                "initials": "JP",
+                "color": "#3DDC97"
+            },
+            {
+                "id": "user-sami",
+                "name": "Sami Virtanen",
+                "initials": "SV",
+                "color": "#F2C14E"
+            }
+        ],
+        "cards": [
+            {
+                "id": "card-1",
+                "columnId": "col-todo",
+                "title": "Define onboarding flow",
+                "description": "Sketch the first-run experience and the empty-state guidance for new boards.",
+                "labelIds": [
+                    "lbl-feat",
+                    "lbl-research"
+                ],
+                "assigneeId": "user-aria",
+                "dueDate": "2026-06-15",
+                "order": 0,
+                "createdAt": "2026-06-01T08:00:00.000Z",
+                "updatedAt": "2026-06-01T08:00:00.000Z"
+            },
+            {
+                "id": "card-2",
+                "columnId": "col-todo",
+                "title": "Audit color contrast",
+                "description": "Verify accent magenta passes WCAG AA on midnight surfaces.",
+                "labelIds": [
+                    "lbl-chore"
+                ],
+                "order": 1,
+                "createdAt": "2026-06-01T08:00:00.000Z",
+                "updatedAt": "2026-06-01T08:00:00.000Z"
+            },
+            {
+                "id": "card-3",
+                "columnId": "col-doing",
+                "title": "Implement drag and drop",
+                "description": "Use dnd-kit for column + card sortable behavior with optimistic updates.",
+                "labelIds": [
+                    "lbl-feat"
+                ],
+                "assigneeId": "user-juno",
+                "order": 0,
+                "createdAt": "2026-06-01T08:00:00.000Z",
+                "updatedAt": "2026-06-01T08:00:00.000Z"
+            },
+            {
+                "id": "card-4",
+                "columnId": "col-review",
+                "title": "Wire up WIP limit warnings",
+                "description": "Magenta overflow chip on the column header when count exceeds limit.",
+                "labelIds": [
+                    "lbl-feat"
+                ],
+                "assigneeId": "user-sami",
+                "order": 0,
+                "createdAt": "2026-06-01T08:00:00.000Z",
+                "updatedAt": "2026-06-01T08:00:00.000Z"
+            },
+            {
+                "id": "card-5",
+                "columnId": "col-done",
+                "title": "Repo scaffolding",
+                "description": "npm workspaces, Vite + Tailwind, Express + lowdb.",
+                "labelIds": [
+                    "lbl-chore"
+                ],
+                "order": 0,
+                "createdAt": "2026-06-01T08:00:00.000Z",
+                "updatedAt": "2026-06-01T08:00:00.000Z"
+            }
+        ]
+    }
+}

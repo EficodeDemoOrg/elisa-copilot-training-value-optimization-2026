@@ -1,0 +1,23 @@
+{
+    "name": "kanban-board",
+    "private": true,
+    "version": "0.1.0",
+    "type": "module",
+    "workspaces": [
+        "apps/*",
+        "packages/*"
+    ],
+    "scripts": {
+        "dev": "concurrently -n server,web -c magenta,cyan \"npm run dev -w @kanban/server\" \"npm run dev -w @kanban/web\"",
+        "build": "npm run build -w @kanban/shared && npm run build -w @kanban/server && npm run build -w @kanban/web",
+        "test": "npm test -w @kanban/server && npm test -w @kanban/web",
+        "lint": "npm run lint -w @kanban/web"
+    },
+    "devDependencies": {
+        "concurrently": "^9.2.4",
+        "typescript": "^5.6.3"
+    },
+    "engines": {
+        "node": ">=20"
+    }
+}
